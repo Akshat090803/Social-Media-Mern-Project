@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+  
+
+.border-color-gradient-custom-class {
+  background: conic-gradient(from 300deg, #D81159, #8F2D56, #ca2aca, #FBB13C, #FF7733, #D81159);
+}
+.timeline-color-gradient-custom-class {
+  background: linear-gradient(300deg, #D81159, #8F2D56, #ca2aca, #FBB13C, #FF7733, #D81159);
+}
+
+.timeline {
+  width: 0%;
+  animation: fillTimeline 14s linear forwards;
+  -webkit-animation: fillTimeline 14s linear forwards;
+}
+
+@keyframes fillTimeline {
+  100% {
+      width: 100%;
+      
+      
+      
+  }
+  
+}
+
+.loadingtimeline {
+  width: 0%;
+  animation: fillLoadingTimeline 5s linear forwards;
+  -webkit-animation: fillLoadingTimeline 5s linear forwards;
+}
+
+@keyframes fillLoadingTimeline {
+  1%{
+    width: 70%;
+  }
+ 
+
+  100% {
+      width: 90%;
+      
+      
+      
+  }
+  
+}
+
+
+body,html,.scrollbar-none{
+scrollbar-width: thin;
+scroll-behavior: smooth;
+scrollbar-color: #888 transparent;
+
+
+
+}
+
+.scrollbar-x-none{
+  scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+
+@media (max-width: 660px) {
+
+  html,.scrollbar-none{
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    
+    
+    
+    }
+
+}
+
+.gradient-text {
+  background: linear-gradient(300deg, #ec0e5f, #ad3668, #dc2cdc, #f8b447, #FF7733, #D81159);
+  background-clip: text; /* Apply the gradient to the text */
+  -webkit-background-clip: text; /* For Safari */
+  color: transparent; /* Make the original text color transparent */
+}
