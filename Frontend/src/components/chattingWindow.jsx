@@ -22,7 +22,7 @@ function ChattingWindow() {
   );
   userAllMessages()
   useGetRTM()
-  axios.defaults.baseURL = 'http://localhost:8080/api/v1'; // Set your default base URL here
+  axios.defaults.baseURL = 'https://social-media-mern-project.onrender.com/api/v1'; // Set your default base URL here
   const {onlineUsers,messages}=useSelector((store)=>store.chat)
   const dispatch=useDispatch()
 

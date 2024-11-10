@@ -18,7 +18,7 @@ function MobileBottomBar() {
   const { user,scrollPosition } = useSelector((store) => store.auth);
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  axios.defaults.baseURL = 'http://localhost:8080/api/v1'; // Set your default base URL here
+  axios.defaults.baseURL = 'https://social-media-mern-project.onrender.com/api/v1'; // Set your default base URL here
   //this is to check if we are already on home page url and we click on home we will scroll to top of the home page
   const { pathname } = useLocation();
   //scroll to top logic is at bottombarclickhander if label===home part

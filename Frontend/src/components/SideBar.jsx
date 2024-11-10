@@ -55,7 +55,7 @@ function SideBar() {
   const { pathname } = useLocation();
   //scroll to top logic is at sidebarclickhander if label===home part
 
-  axios.defaults.baseURL = "http://localhost:8080/api/v1"; // Set your default base URL here
+  axios.defaults.baseURL = "https://social-media-mern-project.onrender.com/api/v1"; // Set your default base URL here
   const navigate = useNavigate();
 
   const [openCreate, setOpenCreate] = useState(false);

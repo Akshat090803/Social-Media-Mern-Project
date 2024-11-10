@@ -7,7 +7,7 @@ import { useDispatch } from "react-redux";
 
 function getSuggestedUsers(){
   const dispatch=useDispatch()
-  axios.defaults.baseURL = 'http://localhost:8080/api/v1'; // Set your default base URL here
+  axios.defaults.baseURL = 'https://social-media-mern-project.onrender.com/api/v1'; // Set your default base URL here
  useEffect(()=>{
   const fetchSuggestedUsers=async()=>{
               try {

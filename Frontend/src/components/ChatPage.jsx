@@ -22,7 +22,7 @@ import { TbArrowLeftToArc } from "react-icons/tb";
 import { FaArrowLeft } from "react-icons/fa";
 
 function ChatPage() {
-  axios.defaults.baseURL = "http://localhost:8080/api/v1"; // Set your default base URL here
+  axios.defaults.baseURL = "https://social-media-mern-project.onrender.com/api/v1"; // Set your default base URL here
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const loc = useLocation();

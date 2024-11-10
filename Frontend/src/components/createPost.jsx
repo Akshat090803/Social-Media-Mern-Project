@@ -14,7 +14,7 @@ function CreatePost({ openCreate, setOpenCreate }) {
   const {post}=useSelector((store)=>store.Posts)
   const {user}=useSelector((store)=>store.auth)
   const dispatch=useDispatch()
-  axios.defaults.baseURL = 'http://localhost:8080/api/v1'; // Set your default base URL here
+  axios.defaults.baseURL = 'https://social-media-mern-project.onrender.com/api/v1'; // Set your default base URL here
   const [caption, setCaption] = useState("");
   const [file,setFile]=useState('')
   const [preview,setPreview]=useState('')

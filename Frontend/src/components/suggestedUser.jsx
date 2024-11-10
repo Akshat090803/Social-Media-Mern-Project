@@ -14,7 +14,7 @@ import NotAvailable from "./NotAvailable";
 function SuggestedUser() {
   let { suggestedUser } = useSelector((store) => store.auth);
   const { user } = useSelector((store) => store.auth);
-  axios.defaults.baseURL = "http://localhost:8080/api/v1"; // Set your default base URL here
+  axios.defaults.baseURL = "https://social-media-mern-project.onrender.com/api/v1"; // Set your default base URL here
   // Only those user in suggestion which are not followed by him
   const customSuggestedUser = suggestedUser.filter((notFollowed) => {
     return !user.following.includes(notFollowed?._id);

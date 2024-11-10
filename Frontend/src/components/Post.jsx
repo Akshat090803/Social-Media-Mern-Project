@@ -26,7 +26,7 @@ import { setAuthUser, setFollowing, updateBookmark } from "@/redux/userAuthSlice
 import { Link } from "react-router-dom";
 
 function Post({ post, index }) {
-  axios.defaults.baseURL = "http://localhost:8080/api/v1"; // Set your default base URL here
+  axios.defaults.baseURL = "https://social-media-mern-project.onrender.com/api/v1"; // Set your default base URL here
   const { user } = useSelector((store) => store.auth);
   const dispatch = useDispatch();
 

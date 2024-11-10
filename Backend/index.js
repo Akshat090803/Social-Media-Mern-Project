@@ -20,7 +20,8 @@ require("dotenv").config();
 
 // cors configuration
 const corsOption = {
-  origin: "http://localhost:5173",
+  // origin: "http://localhost:5173",
+  origin: "https://social-media-mern-project.onrender.com",
   credentials: true,
 };
 

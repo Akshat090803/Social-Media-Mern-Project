@@ -6,7 +6,7 @@ import { useDispatch } from "react-redux";
 
 function userAllPost(){
   const dispatch=useDispatch()
-  axios.defaults.baseURL = 'http://localhost:8080/api/v1'; // Set your default base URL here
+  axios.defaults.baseURL = 'https://social-media-mern-project.onrender.com/api/v1'; // Set your default base URL here
  useEffect(()=>{
   const fetchAllPost=async()=>{
               try {

@@ -9,7 +9,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
 function EditProfile() {
 
-  axios.defaults.baseURL = 'http://localhost:8080/api/v1'; // Set your default base URL here
+  axios.defaults.baseURL = 'https://social-media-mern-project.onrender.com/api/v1'; // Set your default base URL here
   const navigate=useNavigate()
   const dispatch=useDispatch()
   const { user } = useSelector((store) => store.auth);

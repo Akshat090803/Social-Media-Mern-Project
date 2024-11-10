@@ -337,7 +337,7 @@ function App() {
     dispatch(setMessageNotificationFromDb(user?.messageNotifications));
 
     if (user) {
-      const socketio = io("http://localhost:8080", {
+      const socketio = io("https://social-media-mern-project.onrender.com", {
         query: {
           userId: user?._id,
         },

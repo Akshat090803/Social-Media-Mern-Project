@@ -13,7 +13,7 @@ import { setFollowing } from "@/redux/userAuthSlice";
 import { Link } from "react-router-dom";
 
 function ThreeDot({ openThreeDot, setOpenThreeDot, isLegal, postID,bookmarkHandler}) {
-  axios.defaults.baseURL = "http://localhost:8080/api/v1"; // Set your default base URL here
+  axios.defaults.baseURL = "https://social-media-mern-project.onrender.com/api/v1"; // Set your default base URL here
   const dispatch = useDispatch();
 
   const { user } = useSelector((store) => store.auth);

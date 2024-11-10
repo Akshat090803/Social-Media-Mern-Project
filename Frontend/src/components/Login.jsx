@@ -11,7 +11,7 @@ import { setAuthUser } from "@/redux/userAuthSlice";
 function Login() {
   const dispatch=useDispatch()
   const navigate=useNavigate()
-  axios.defaults.baseURL = 'http://localhost:8080/api/v1'; // Set your default base URL here
+  axios.defaults.baseURL = 'https://social-media-mern-project.onrender.com/api/v1'; // Set your default base URL here
   const {user}=useSelector((store)=>store.auth)
   //loading state
   const [loading,setLoading]=useState(false)
@@ -85,7 +85,7 @@ function Login() {
   },[])
   return (
     <>
-      <div className="w-full h-screen flex justify-center items-center bg-lightTheme-priBack dark:bg-darkTheme-priBack overflow-x-auto ">
+      <div className="w-full h-[100svh] sm:h-screen flex justify-center items-center bg-lightTheme-priBack dark:bg-darkTheme-priBack overflow-x-auto ">
         <form
           onSubmit={loginHandler}
           className=" my-4 border border-gray-300 dark:border-gray-700    flex flex-col justify-center gap-5 p-8 w-[348.66px] "

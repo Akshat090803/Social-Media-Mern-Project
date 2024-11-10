@@ -11,7 +11,7 @@ import { setAuthUser } from "@/redux/userAuthSlice";
 function SwitchProfile() {
   const dispatch=useDispatch()
   const navigate=useNavigate()
-  axios.defaults.baseURL = 'http://localhost:8080/api/v1'; // Set your default base URL here
+  axios.defaults.baseURL = 'https://social-media-mern-project.onrender.com/api/v1'; // Set your default base URL here
 
   //loading state
   const [loading,setLoading]=useState(false)

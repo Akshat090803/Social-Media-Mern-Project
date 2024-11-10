@@ -8,7 +8,7 @@ import { useDispatch, useSelector } from "react-redux";
 function useGetUserProfile(userId){
   const dispatch=useDispatch()
   const { user } = useSelector((store) => store.auth);
-  axios.defaults.baseURL = 'http://localhost:8080/api/v1'; // Set your default base URL here
+  axios.defaults.baseURL = 'https://social-media-mern-project.onrender.com/api/v1'; // Set your default base URL here
  useEffect(()=>{
   const fetchUserProfile=async()=>{
               try {
