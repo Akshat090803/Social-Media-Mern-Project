@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "nodemon Backend/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build":"npm install && npm install --prefix Frontend && npm run build --prefix Frontend",
-    "start":"nodemon Backend/index.js"
+    "build": "npm install && npm install --prefix Frontend && npm run build --prefix Frontend",
+    "start": "nodemon Backend/index.js"
   },
   "keywords": [],
   "author": "",
@@ -26,5 +26,8 @@
     "password-validator": "^5.3.0",
     "sharp": "^0.33.4",
     "socket.io": "^4.7.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
   }
 }
