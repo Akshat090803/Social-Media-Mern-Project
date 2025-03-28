@@ -89,6 +89,7 @@ const dispatch=useDispatch()
 
     return ()=>{
       setShowMoreLink(false)
+      
     }
   }, [userProfile]);
 
@@ -166,14 +167,16 @@ const dispatch=useDispatch()
     <>
 
    
-        <div className="sm:hidden fixed top-0 w-full z-40  dark:bg-darkTheme-priBack bg-lightTheme-priBack  dark:text-darkTheme-mainText text-center flex items-center justify-center py-2 border-b border-gray-300 dark:border-[#767676]  ">
+        
+              <div className="sm:hidden fixed top-0 w-full z-40  dark:bg-darkTheme-priBack bg-lightTheme-priBack  dark:text-darkTheme-mainText text-center flex items-center justify-center py-2 border-b border-gray-300 dark:border-[#767676]  ">
           <Link to={'/'} className="absolute left-3"><MdOutlineKeyboardArrowLeft size={'40px'} /></Link>
-           <LogOut className="absolute right-4 cursor-pointer" onClick={logoutHandler}/>
+           <LogOut  className={`absolute right-4 cursor-pointer ${userProfile?._id === user?._id  && "hidden"}`} onClick={logoutHandler}/>
           
             <span className="dark:text-darkTheme-mainText  text-xl ">
                 {userProfile?.username}
               </span>
        </div>
+           
 {/* Upper div is for mobile view only */}
 
 <div className="fixed bottom-0 z-50 sm:hidden w-full"><MobileBottomBar/></div>  {/*this is also for mobile view only */}

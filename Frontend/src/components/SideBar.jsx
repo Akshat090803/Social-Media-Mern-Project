@@ -1,4 +1,4 @@
-import {  useEffect, useState } from "react";
+import {   useState } from "react";
 import {
   Home,
   Search,
@@ -7,16 +7,16 @@ import {
   Heart,
   PlusSquare,
 } from "lucide-react";
-import { FaFacebookMessenger } from "react-icons/fa";
+
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 
 import {
   Link,
-  NavLink,
+ 
   useLocation,
   useNavigate,
-  useParams,
+ 
 } from "react-router-dom";
 import axios from "axios";
 import { toast } from "sonner";
@@ -141,7 +141,7 @@ const loadAllPost=async()=>{
 
     
   } catch (error) {
-    
+     console.log(error)
   }
 }
 
@@ -204,13 +204,11 @@ const loadAllPost=async()=>{
                 }`}
                 style={{ transition: "background-color 0.2s linear" }}
               >
-                <div className="flex relative items-center py-3 group ">
+                <div className="flex relative items-center  group  ">
                   <span
                     className={`dark:text-darkTheme-mainText ${
-                      index === 6 || index === 4 || index === 3
-                        ? ""
-                        : "group-hover:animate-spin"
-                    }`}
+                      index === 7 && "group-hover:animate-spin"
+                    } `}
                   >
                     {item.icon}
                   </span>

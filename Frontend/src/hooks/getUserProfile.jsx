@@ -24,10 +24,14 @@ function useGetUserProfile(userId){
                 }
                 
               } catch (error) {
-                 
+                throw new Error(error)
               }
   }
    fetchUserProfile()
+
+     return ()=>{
+       dispatch(setUserProfile(null))
+      }
   
  },[userId,user])
 }

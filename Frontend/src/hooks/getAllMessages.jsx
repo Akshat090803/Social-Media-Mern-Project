@@ -34,6 +34,11 @@ function userAllMessages(){
               }
   }
    fetchAllMessages()
+
+   return ()=>{
+    dispatch(setMessages([]))
+    // console.log("USer changed")
+   }
  },[selectedUser])
 }
 
