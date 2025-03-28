@@ -32,9 +32,10 @@ function ProfilePage() {
   const navigate=useNavigate()
   const params = useParams();
   const id=params.id
-  useGetUserProfile(id);
- 
+  // useGetUserProfile(id);
+  const { profileLoading} = useGetUserProfile(id);
 
+ 
   
   const { userProfile } = useSelector((store) => store?.auth);
   const { user } = useSelector((store) => store.auth);
@@ -160,7 +161,9 @@ const dispatch=useDispatch()
     }
   };
 
-
+if(profileLoading){
+  return <LoadingPage/>
+}
  
 
   return (
@@ -170,7 +173,7 @@ const dispatch=useDispatch()
         
               <div className="sm:hidden fixed top-0 w-full z-40  dark:bg-darkTheme-priBack bg-lightTheme-priBack  dark:text-darkTheme-mainText text-center flex items-center justify-center py-2 border-b border-gray-300 dark:border-[#767676]  ">
           <Link to={'/'} className="absolute left-3"><MdOutlineKeyboardArrowLeft size={'40px'} /></Link>
-           <LogOut  className={`absolute right-4 cursor-pointer ${userProfile?._id === user?._id  && "hidden"}`} onClick={logoutHandler}/>
+           <LogOut  className={`absolute right-4 cursor-pointer ${userProfile?._id !== user?._id  && "hidden"}`} onClick={logoutHandler}/>
           
             <span className="dark:text-darkTheme-mainText  text-xl ">
                 {userProfile?.username}
