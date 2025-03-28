@@ -33,7 +33,7 @@ function ProfilePage() {
   const params = useParams();
   const id=params.id
   // useGetUserProfile(id);
-  const { profileLoading} = useGetUserProfile(id);
+useGetUserProfile(id);
 
  
   
@@ -161,10 +161,6 @@ const dispatch=useDispatch()
     }
   };
 
-if(profileLoading){
-  return <LoadingPage/>
-}
- 
 
   return (
     <>
