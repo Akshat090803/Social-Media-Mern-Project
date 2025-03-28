@@ -25,7 +25,8 @@ import { IoIosConstruct } from "react-icons/io";
 import { CiCamera } from "react-icons/ci";
 import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
 import MobileBottomBar from "./mobileBottomBar";
-import LoadingPage from "./loadingPage";
+
+
 
 function ProfilePage() {
   axios.defaults.baseURL = "https://social-media-mern-project.onrender.com/api/v1"; // Set your default base URL here
@@ -35,7 +36,7 @@ function ProfilePage() {
   // useGetUserProfile(id);
 useGetUserProfile(id);
 
- 
+
   
   const { userProfile } = useSelector((store) => store?.auth);
   const { user } = useSelector((store) => store.auth);
@@ -161,6 +162,7 @@ const dispatch=useDispatch()
     }
   };
 
+ 
 
   return (
     <>
