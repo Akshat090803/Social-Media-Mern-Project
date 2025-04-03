@@ -1,6 +1,6 @@
 # Instagram Clone (MERN Stack, Socket.IO, JWT, Tailwind)
 
-This project is a full-stack Instagram clone, aiming to replicate the core UI and functionality of Instagram, built using the MERN stack (MongoDB, Express.js, React.js, Node.js), Socket.IO for real-time features, JWT for authentication, and Tailwind CSS for styling. It includes real-time updates, notifications, chat, and a responsive design with system-based dark/light mode support.
+This project is a full-stack Instagram clone, aiming to replicate the core UI and functionality of Instagram, built using the MERN stack (MongoDB, Express.js, React.js, Node.js), Socket.IO for real-time features, JWT for authentication, and Tailwind CSS for styling. It includes real-time updates, notifications, chat, a responsive design with system-based dark/light mode support, robust search functionality, image compression, comprehensive error handling, and backend field validations.
 
 **Live Demo:** [https://social-media-mern-project.onrender.com/](https://social-media-mern-project.onrender.com/)
 
@@ -13,7 +13,7 @@ This project is a full-stack Instagram clone, aiming to replicate the core UI an
     -   Edit profile information (avatar, bio, etc.).
     -   Follow and unfollow users.
 -   **Posts:**
-    -   Create and upload posts with images.
+    -   Create and upload posts with images (with image compression).
     -   View posts in a feed.
     -   Like and comment on posts.
     -   Bookmark posts.
@@ -30,6 +30,14 @@ This project is a full-stack Instagram clone, aiming to replicate the core UI an
     -   Automatic dark/light mode based on the user's system theme.
 -   **Responsive UI:**
     -   Almost identical UI to Instagram, designed with Tailwind CSS for responsiveness.
+-   **Robust Search Functionality:**
+    -   Optimized search for users and posts.
+-   **Story UI Element:**
+    -   Story feature implemented as a UI element.
+-   **Comprehensive Error Handling:**
+    -   Robust error management throughout the application.
+-   **Backend Field Validations:**
+    -   Stringent field validation on the backend.
 
 ## Tech Stack
 
@@ -123,15 +131,3 @@ This project is a full-stack Instagram clone, aiming to replicate the core UI an
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a pull request.
-
-## Future Improvements
-
--   Explore and add stories functionality.
--   Add direct messages with media support.
--   Improve search functionality.
--   Implement more robust error handling.
--   Add more UI enhancements.
--   Add more comprehensive unit and integration tests.
--   Implement image and video compression before upload.
--   Improve performance optimization.
--   Implement push notifications for mobile devices.
