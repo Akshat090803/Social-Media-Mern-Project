@@ -53,7 +53,7 @@ This project is a full-stack Instagram clone, aiming to replicate the core UI an
     -   MongoDB (with Mongoose)
     -   Socket.IO Server
     -   JSON Web Tokens (JWT)
-    -   Cloudinary/AWS S3 (for image storage)
+    -   Cloudinary
 
 ## Installation
 
