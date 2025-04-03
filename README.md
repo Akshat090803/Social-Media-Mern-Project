@@ -1,6 +1,6 @@
 # Instagram Clone (MERN Stack, Socket.IO, JWT, Tailwind)
 
-This project is a full-stack Instagram clone, aiming to replicate the core UI and functionality of Instagram, built using the MERN stack (MongoDB, Express.js, React.js, Node.js), Socket.IO for real-time features, JWT for authentication, and Tailwind CSS for styling. It includes real-time updates, notifications, chat, a responsive design with system-based dark/light mode support, robust search functionality, image compression, comprehensive error handling, and backend field validations.
+This project is a full-stack Instagram clone, aiming to replicate the core UI and functionality of Instagram, built using the MERN stack (MongoDB, Express.js, React.js, Node.js), Socket.IO for real-time features, JWT for authentication, and Tailwind CSS for styling. It includes real-time updates, notifications, chat, a responsive design with system-based dark/light mode support, robust search functionality, image compression, comprehensive error handling, and backend field validations. **Notably, the frontend is served directly from the backend server.**
 
 **Live Demo:** [https://social-media-mern-project.onrender.com/](https://social-media-mern-project.onrender.com/)
 
@@ -91,41 +91,25 @@ This project is a full-stack Instagram clone, aiming to replicate the core UI an
     AWS_REGION=<your_aws_region>
     ```
 
-5.  **Start the backend server:**
-
-    ```bash
-    npm run dev
-    ```
-
-6.  **Navigate to the frontend directory:**
+5.  **Build the frontend and place it into the backend's public directory**
 
     ```bash
     cd ../frontend
-    ```
-
-7.  **Install frontend dependencies:**
-
-    ```bash
     npm install
+    npm run build
+    mv build ../backend/public
+    cd ../backend
     ```
 
-8.  **Create a `.env.local` file in the frontend directory and add your environment variables:**
-
-    ```
-    REACT_APP_API_URL=http://localhost:8080
-    ```
-
-9.  **Start the frontend development server:**
+6.  **Start the backend server:**
 
     ```bash
     npm run dev
     ```
 
-    (This will typically run on port 5173.)
-
 ## Usage
 
--   Open your browser and navigate to `http://localhost:5173`.
+-   Open your browser and navigate to `http://localhost:8080`.
 -   Sign up or log in to your account.
 -   Explore the feed, follow users, create posts, and interact with other users.
 -   The dark/light mode will automatically adjust based on your system's theme settings.
