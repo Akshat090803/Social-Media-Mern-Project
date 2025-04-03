@@ -78,7 +78,7 @@ This project is a full-stack Instagram clone, aiming to replicate the core UI an
 4.  **Create a `.env` file in the backend directory and add your environment variables:**
 
     ```
-    PORT=5000
+    PORT=8080
     MONGODB_URI=<your_mongodb_uri>
     JWT_SECRET=<your_jwt_secret>
     CLOUD_NAME=<your_cloudinary_cloud_name>
@@ -112,18 +112,20 @@ This project is a full-stack Instagram clone, aiming to replicate the core UI an
 8.  **Create a `.env.local` file in the frontend directory and add your environment variables:**
 
     ```
-    REACT_APP_API_URL=http://localhost:5000
+    REACT_APP_API_URL=http://localhost:8080
     ```
 
 9.  **Start the frontend development server:**
 
     ```bash
-    npm start
+    npm run dev
     ```
+
+    (This will typically run on port 5173.)
 
 ## Usage
 
--   Open your browser and navigate to `http://localhost:3000`.
+-   Open your browser and navigate to `http://localhost:5173`.
 -   Sign up or log in to your account.
 -   Explore the feed, follow users, create posts, and interact with other users.
 -   The dark/light mode will automatically adjust based on your system's theme settings.
