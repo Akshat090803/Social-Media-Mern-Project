@@ -4,6 +4,17 @@ This project is a full-stack Instagram clone, aiming to replicate the core UI an
 
 **Live Demo:** [https://social-media-mern-project.onrender.com/](https://social-media-mern-project.onrender.com/)
 
+---
+
+## 🔐 Demo Login Credentials
+
+- 👤 **Email:** `user@example.com`  
+- 🔑 **Password:** `User@insta12`
+
+> Use this test account to explore all features without signing up! 🚀
+
+---
+
 ## Features
 
 -   **Authentication:**
